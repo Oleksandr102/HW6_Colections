@@ -1,20 +1,27 @@
-package main.java.com.company;
+package main.java.com.company.operations;
 
 import java.util.ArrayList;
 
 public class ReplacementOps {
-    public ReplacementOps() {
-        ArrayList<String> fruits = new ArrayList<>();
+    ArrayList<String> fruits = new ArrayList<>();
 
+    public ReplacementOps() {
+        createItemList();
+
+        System.out.println(fruits);
+        listSearch();
+    }
+
+    public void createItemList() {
         fruits.add("Orange");
         fruits.add("Banana");
         fruits.add("Grapes");
         fruits.add("nuts");
         fruits.add("melon");
         fruits.add("Orange");
+    }
 
-        System.out.println(fruits);
-
+    public void listSearch() {
         if (fruits.contains("Orange")) {
             int orange = fruits.indexOf("Orange");
             fruits.set(orange, "Grapefruit");

@@ -6,11 +6,6 @@ public class Matching {
     ArrayList<Integer> test1 = new ArrayList<>();
     ArrayList<Integer> test2 = new ArrayList<>();
 
-    public Matching() {
-        addValues();
-        matchingElements();
-    }
-
     public void addValues() {
         test1.add(22);
         test1.add(33);
@@ -26,7 +21,7 @@ public class Matching {
         test2.add(54);
         test2.add(66);
     }
-    
+
     public void matchingElements() {
         test1.retainAll(test2);
         System.out.println("Common elements: " + test1);

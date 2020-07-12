@@ -8,8 +8,17 @@ import main.java.com.company.operations.ReplacementOps;
 public class Main {
 
     public static void main(String[] args) {
-        new Divisible();
-        new ReplacementOps();
-        new Matching();
+
+        Divisible a = new Divisible();
+        a.addItems();
+        a.printFilteredList();
+
+        ReplacementOps b = new ReplacementOps();
+        b.createItemList();
+        b.listSearch();
+
+        Matching c = new Matching();
+        c.addValues();
+        c.matchingElements();
     }
 }

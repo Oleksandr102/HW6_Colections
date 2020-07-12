@@ -5,13 +5,6 @@ import java.util.ArrayList;
 public class ReplacementOps {
     ArrayList<String> fruits = new ArrayList<>();
 
-    public ReplacementOps() {
-        createItemList();
-
-        System.out.println(fruits);
-        listSearch();
-    }
-
     public void createItemList() {
         fruits.add("Orange");
         fruits.add("Banana");

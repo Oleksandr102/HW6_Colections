@@ -6,11 +6,6 @@ import java.util.List;
 public class Divisible {
     List<Integer> intList = new ArrayList<>();
 
-    public Divisible() {
-        addItems();
-        printFilteredList();
-    }
-
     public void addItems() {
         intList.add(3);
         intList.add(9);
